@@ -3,6 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Home task-css-1-option2</title>
+    <style media="screen">
+        .textStyle {
+            font-family: sans-serif;
+            font-size: 14px;
+            background-color: #eee;
+        }
+    </style>
+    <style media="print">
+        .textStyle {
+            font-family: serif;
+            font-size: 55px;
+            color: #fff;
+            background-color: #000
+        }
+    </style>
     <style>
         .rightpic {
          float: right; /* Выравнивание по правому краю */
@@ -13,9 +28,9 @@
         .centerpic {
          text-align: center; /* Выравнивание по центру */ 
         }
-       </style>
+    </style>
 </head>
-<body>
+<body class="textStyle">
     <h1><img src="img/Icon-Python.png" alt="логотип Python" title="логотип Python" class="rightpic">HOW-TO: Программа на Python, Часть 1</h1>
     <ul><!--List begining-->
         <li><i><a href="#">Программа на Python — часть 1</a></i></li>
