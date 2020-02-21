@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home task-css-2.3</title>
+    <style>
+        .block1 {
+            width: 20%;
+            background-color: rgb(202, 195, 195);
+            float: left;
+        }
+        .block2 {
+            width: 80%;
+            padding-top: 2px;
+            background-color: rgb(156, 151, 151);
+            float: left;
+            margin-bottom: 1mm;
+        }
+        .block3 {
+            background-color: rgb(184, 180, 180);
+            clear: both;
+        }
+        li {
+            list-style: disc;
+        }
+        span {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="block1">
+        <p><span>Блок навигации</span></p>
+            <ul>
+                <li>Ширина 15em</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Располагается слева</li>
+                <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+            </ul>
+        </div>
+    </div>
+    <div class="block2">
+        <p><span>Статья 1</span></p>
+        Размер блока:<br>
+        Занимает всю доступную ширину<br>
+        Должен присутствовать цвет фона<br>
+        Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи<br>
+        свойства margin-bottom
+    </div>
+    <div class="block2">
+        <p><span>Статья 2</span></p>
+        <p>Размер блока:<br>
+        Занимает всю доступную ширину<br>
+        Должен присутствовать цвет фона<br>
+        Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи
+        свойства margin-bottom. Картинка вставленна при помощи тега, плавание
+        организованно по правому краю внутри данной статьи для этой картинки
+        </p>
+        <p align=right><img src="img/email_image.png" width="115" height="115"></p>
+    </div>
+    <div class="block3">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.</div>
+</body>
+</html>

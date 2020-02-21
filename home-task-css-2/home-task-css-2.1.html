@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home task-css-2.1</title>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        p {
+            display: inline;
+        }
+        .card img { 
+            position: relative;
+        }
+        .three {
+            top: 50px;
+            left: 55px;
+            z-index: 5;
+        }
+        .five {
+            left: -120px;
+            top: 25px;
+            z-index: 2;
+        }
+        .nine {
+            left: -295px;
+            z-index: 1;
+        }
+        .card img:hover {
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+   <div>
+       <p>
+           <img src=img/three.png>
+           <img src=img/five.png>
+           <img src=img/nine.png>
+       </p>
+    </div>
+    <div>
+        <p class="card">
+            <img src=img/three.png class="three">
+            <img src=img/five.png class="five">
+            <img src=img/nine.png class="nine">
+        </p>
+     </div>
+</body>
+</html>
