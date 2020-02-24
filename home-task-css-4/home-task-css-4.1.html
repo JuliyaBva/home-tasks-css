@@ -6,39 +6,75 @@
     <title>Home task css 4.1</title>
     <style>
         .img1 {
-            background: url("img/extref.png") no-repeat;
+            background: url("img/extref.png") no-repeat center;
             padding-left: 10px;
         }
         .img2 {
             background: url("img/logo-doc.jpg") no-repeat;
             padding-left: 10px;
+            padding-right: 10px;
+        }
+        .img3 {
+            background: url("img/logo-pdf.png") no-repeat;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .img4 {
+            background: url("img/logo-zip.gif") no-repeat;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .li1:hover {
+            background: url("img/logo-doc.jpg") no-repeat;
+            padding-right: 30px;
+            background-position: 135px;
+        }
+        .li2:hover {
+            background: url("img/logo-pdf.png") no-repeat;
+            padding-right: 30px;
+            background-position: 103px;
+ 
+        }
+        .li3:hover {
+            background: url("img/logo-zip.gif") no-repeat;
+            padding-right: 30px;
+            background-position: 45px;
+
         }
         div {
-            border: 2px;
-            border-radius: 0.5;
+            border: solid rgb(175, 171, 171);
+            border-width: thin;
+            background-color: none;
+            border-top-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            margin-bottom: 2mm;
+            padding: 5px;
         }
-        ul {
+        li {
             list-style-type: none;
+            background: url("img/logo-list.jpg") no-repeat;
+            padding-left: 20px;
         }
-
     </style>
 </head>
 <body>
     <h2>Форматы файлов.</h2>
-    <div>.DOC или .doc (от англ. <span class="img1"><a href="https://ru.wikipedia.org/wiki/.doc">document</a></span>) — расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без.Расширение .DOC часто использовалось для обозначения простых текстовых файлов без форматирования, однако позже стало использоваться для двоичных форматов с разметкой.
-        <a href="doc/docMSWord.docx">Документ MS Word<span class="img2"> </span>
+    <div>.DOC или .doc (от англ. <span class="img1"></span><a href="https://ru.wikipedia.org/wiki/.doc">document</a>) — расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без.Расширение .DOC часто использовалось для обозначения простых текстовых файлов без форматирования, однако позже стало использоваться для двоичных форматов с разметкой.<br>
+        <a href="doc/document.doc">Документ MS Word</a>&nbsp<span class="img2"></span>
         </div>
-    <div>Portable Document Format (<span class="img1"><a href="https://ru.wikipedia.org/wiki/Portable_Document_Format">PDF</a></span>) — межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка PostScript.
-        Документ PDF
+    <div>Portable Document Format (<span class="img1"></span><a href="https://ru.wikipedia.org/wiki/Portable_Document_Format">PDF</a>) — межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка PostScript.<br>
+        <a href="doc/document.pdf">Документ PDF</a>&nbsp<span class="img3"></span>
     </div>
-    <div>ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <span class="img1"><a href="https://ru.wikipedia.org/wiki/ZIP">.zip</a></span> и хранит в сжатом или несжатом виде один или несколько файлов, которые можно из него извлечь путём распаковки с помощью специальной программы.
-        Архив
+    <div>ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <span class="img1"></span><a href="https://ru.wikipedia.org/wiki/ZIP">.zip</a> и хранит в сжатом или несжатом виде один или несколько файлов, которые можно из него извлечь путём распаковки с помощью специальной программы.<br>
+        <a href="doc/document.zip">Архив</a>&nbsp<span class="img4"></span>
     </div>
     <h3>Это список из файлов</h3>
     <ul>
-        <li>Документ MS Word</li>
-        <li>Документ PDF</li>
-        <li>Архив</li>
+        <li><a href="doc/document.doc" class="li1">Документ MS Word</a></li>
+        <li><a href="doc/document.pdf" class="li2">Документ PDF</a></li>
+        <li><a href="doc/document.zip" class="li3">Архив</a></li>
     </ul>
 </body>
 </html>

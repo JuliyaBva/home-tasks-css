@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home task css 4_additional 1</title>
+    <style>
+        div > a::before {
+            content: url("img/extref.png");
+        }
+        span.img1 a::after {
+            content: url("img/logo-doc.jpg");
+        }
+        span.img2 a::after {
+            content: url("img/logo-pdf.png");
+        }
+        span.img3 a::after {
+            content: url("img/logo-zip.gif");
+        }
+        li a::before {
+            content: url("img/logo-list.jpg");
+        }
+        .li1:hover {
+            background: url("img/logo-doc.jpg") no-repeat;
+            padding-right: 30px;
+            background-position: 150px;
+        }
+        .li2:hover {
+            background: url("img/logo-pdf.png") no-repeat;
+            padding-right: 30px;
+            background-position: 120px;
+ 
+        }
+        .li3:hover {
+            background: url("img/logo-zip.gif") no-repeat;
+            padding-right: 30px;
+            background-position: 65px;
+
+        }
+        div {
+            border: solid rgb(175, 171, 171);
+            border-width: thin;
+            background-color: none;
+            border-top-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            margin-bottom: 2mm;
+            padding: 5px;
+        }
+        li {
+            list-style-type: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Форматы файлов.</h2>
+    <div>.DOC или .doc (от англ. <a href="https://ru.wikipedia.org/wiki/.doc">document</a>) — расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без.Расширение .DOC часто использовалось для обозначения простых текстовых файлов без форматирования, однако позже стало использоваться для двоичных форматов с разметкой.<br>
+        <span class="img1"><a href="doc/document.doc">Документ MS Word</a></span>
+        </div>
+    <div>Portable Document Format (<a href="https://ru.wikipedia.org/wiki/Portable_Document_Format">PDF</a>) — межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка PostScript.<br>
+        <span class="img2"><a href="doc/document.pdf">Документ PDF</a></span>
+    </div>
+    <div>ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <a href="https://ru.wikipedia.org/wiki/ZIP">.zip</a> и хранит в сжатом или несжатом виде один или несколько файлов, которые можно из него извлечь путём распаковки с помощью специальной программы.<br>
+        <span class="img3"><a href="doc/document.zip">Архив</a></span>
+    </div>
+    <h3>Это список из файлов</h3>
+    <ul>
+        <li><a href="doc/document.doc" class="li1">Документ MS Word</a></li>
+        <li><a href="doc/document.pdf" class="li2">Документ PDF</a></li>
+        <li><a href="doc/document.zip" class="li3">Архив</a></li>
+    </ul>
+</body>
+</html>
