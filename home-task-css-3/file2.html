@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home task-css-3.1</title>
+    <style>
+        .wrap {
+            display: flex;
+        }
+        .block1 {
+            color: gray bold;
+            border: solid rgb(29, 28, 28);
+            border-width: thin;
+            border-spacing: 1px;
+            background-color: rgb(209, 202, 202);
+            border-radius: 5px;
+            text-align: left;
+            opacity:.8;
+        }
+        .block2 > div {
+            color: gray bold;
+            border: solid rgb(29, 28, 28);
+            border-width: thin;
+            border-spacing: 1px;
+            background-color: rgb(209, 202, 202);
+            border-radius: 5px;
+            text-align: left;
+            opacity:.8;
+        }
+        .wednesday {
+            color: gray bold;
+            border: solid rgb(29, 28, 28);
+            border-width: thin;
+            border-spacing: 1px;
+            background-color: rgb(124, 122, 122);
+            border-radius: 5px;
+            text-align: left;
+            opacity:.8;
+        }
+        @media screen and (max-width: 700px) {
+            .wrap {
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="block1">Понедельник</div>
+        <div class="block1">Вторник</div>
+        <div><span class="wednesday">Среда</span>
+            <div class="block2"> 
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div class="block1">Четверг</div>
+        <div class="block1">Пятница</div>
+        <div class="block1">Суббота</div>
+        <div class="block1">Воскресенье</div>
+    </div>
+</body>
+</html>
